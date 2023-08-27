@@ -1,628 +1,762 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
 
-     <!-- CSS only -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-     <!-- Custom File's Link -->
-     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/responsiv_style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Custom File's Link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsiv_style.css">
 
-       <!-- CSS FILES -->
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-       
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
 </head>
+
 <body>
-    
 
-    <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg nav1">
+
+
+   <section>
+     <!-- navbar section start -->
+     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0" style="top: 0px;">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-info"><img src="https://cdn-icons-gif.flaticon.com/11933/11933680.gif"><span class="text-warning "><b>Wild</b>
+                </span><span class="text-success"><b>Life</b></span></h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            fdprocessedid="scxh8"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <li>
+                    <a class="nav-link nav-item menu" href="#section_1">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link nav-item menu" href="#section_2">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle menu" href="#section_3" id="navbarLightDropdownMenuLink"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Work</a>
+
+                    <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                        <li> <a class="dropdown-item" href="shop-listing.html">Our Vission</a></li>
+
+                        <li> <a class="dropdown-item" href="vishal.html">Our Mission</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="nav-link nav-item menu" href="#section_4">Reviews</a>
+                </li>
+                <li>
+                    <a class="nav-link nav-item menu" href="#section_5">Contact</a>
+                </li>
+            </div>
+            <a class="btn btn-warning  py-4 px-lg-5 d-none d-lg-block" data-bs-toggle="modal"
+                data-bs-target="#section_6">Explore More<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+            
+    </nav>
+   </section>
+
+   <section>
+    <div class="modal fade" id="section_6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Explore Now</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <form method="post" action="" enctype="multipart/form-data">
+                    <div class="form-group form-row">
+                        <label class="col-md-3 required">Name</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" name="Name"
+                                placeholder="please enter your name">
+                        </div>
+                    </div>
+                    <div class="form-group form-row">
+                        <label class="col-md-3 required">Email</label>
+                        <div class="col-md-9">
+                            <input type="email" class="form-control" name="email"
+                                placeholder="please enter your email">
+                        </div>
+                    </div>
+                    <div class="form-group form-row">
+                        <label class="col-md-3 required">Phone</label>
+                        <div class="col-md-9">
+                            <input type="number" class="form-control" name="phone"
+                                placeholder="please enter phone number">
+                        </div>
+                    </div>
+                    <div class="form-group form-row">
+                        <label class="col-md-3"></label>
+                        <div class="col-md-9">
+                            <button type="submit" class="btn btn-info">Join</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>           
+        
+</div>
+   </section>
+
+
+    <section class="banner" id="section_1">
         <div class="container">
-             <a  class="navbar-brand" href="index.html"><span class="text-warning "><b>Landing</b> </span><span class="text-success"><b>Page</b></span></a>
+            <div class="row">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <div class="col-lg-8 col-12 text-center mx-auto">
+                    <div class="hero-section-text">
+                        <br><br>
+                        <h3 class="section-small-title text-white"> Welcome to <span class="text-warning "><b>Wild</b>
+                                <span class="text-success "><b>Life</b> <i class="hero-icon bi-house"></i></small>
+                                    <br><br>
+                                    <h1 class="hero-title text-white mt-2 mb-4">
+                                        OUR APPROACH TO SAVING WILDLIFE</h1>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                         <a  class="nav-link menu" href="#section_1">Home</a>
+                                    <form class="custom-form hero-form" action="#" method="get" role="form">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-6 col-12">
+                                                <div class="input-group align-items-center">
+                                                    <label for="product-name"> Animal .</label>
+
+                                                    <input type="text" name="product-name" id="product-name"
+                                                        class="form-control" placeholder="Tiger, Lion..." required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-5 col-md-6 col-12">
+                                                <div class="input-group align-items-center">
+                                                    <label for="last-name"> Country .</label>
+
+                                                    <select name="price-range" class="form-select form-control"
+                                                        id="price-range" aria-label="Default select example">
+                                                        <option value="500" selected></option>
+                                                        <option value="1000">1,000 - 2,900</option>
+                                                        <option value="3000">3,000 - 5,000</option>
+                                                        <option value="5000">5,000 - 10,000</option>
+                                                        <option value="11000">11,000 - 25,000</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-2 col-md-6 col-12">
+                                                <a type="submit" class=" btn btn-warning form-control" href="https://wildlifesos.org/locations/manekdoh-leopard-rescue-centre/">Search</a>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <div class="hero-btn d-flex justify-content-center align-items-center">
+                                        <a class="text-black" class="bi-arrow-down hero-btn-link smoothscroll"
+                                            href="#section_2"></a>
+                                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+
+    <section class="about-section section-padding" id="section_2">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-5 col-12">
+                    <small class="section-small-title text-success"><b>HISTORY</b></small>
+
+                    <h2 class="mt-2 mb-4"><span class="text-warning "><b>Our</b> </span><span
+                            class="text-success "><b>Story</b> </span> </h2>
+
+                    <h4 class="text-muted mb-3">In 1986,a group of individuals determined to conserve India’s rich
+                        natural heritage</h4>
+                    began operating a rescue centre out of a small garage in New Delhi. Their goal was simple – to aid
+                    wildlife in distress and expand India’s core value of the right to freedom and dignity to the realm
+                    of wild animals. Kartick Satyanarayan and Geeta Seshamani’s grit and determination gave birth to
+                    Wildlife SOS. Today, we have evolved into an organisation actively protecting India’s precious
+                    wildlife, conserving habitats, studying biodiversity, conducting research, and creating alternative
+                    and sustainable livelihoods for erstwhile poacher communities or those who depend on wildlife for
+                    sustenance. We are the largest wildlife rescue organisation in India and run 12 rescue and
+                    rehabilitation centres across the country.
+
+                    <p>began operating a rescue centre out of a small garage in New Delhi. Their goal was simple – to
+                        aid wildlife in distress and expand India’s core value of the right to freedom and dignity to
+                        the realm of wild animals. Kartick Satyanarayan and Geeta Seshamani’s grit and determination
+                        gave birth to Wildlife SOS. Today, we have evolved into an organisation actively protecting
+                        India’s precious wildlife, conserving habitats, studying biodiversity, conducting research, and
+                        creating alternative and sustainable livelihoods for erstwhile poacher communities or those who
+                        depend on wildlife for sustenance. We are the largest wildlife rescue organisation in India and
+                        run 12 rescue and rehabilitation centres across the country.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-3 col-md-5 col-5 mx-lg-auto">
+                    <img src="https://images.pexels.com/photos/17992418/pexels-photo-17992418/free-photo-of-great-basin-fence-lizard.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                        class="about-image about-image-small img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-7 col-7">
+                    <img src="https://images.pexels.com/photos/14007613/pexels-photo-14007613.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                        class="about-image img-fluid" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <br><br>
+
+
+    <section class="featured-section section-padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-5 col-12">
+                    <br><br>
+                    <div class="card ">
+                        <h2 class="mt-2 mb-4"><span class="text-warning "><b>Our</b> </span><span
+                                class="text-success "><b>Vission</b> </span> </h2>
+
+                        <div class="d-flex">
+                            <i class="featured-icon bi-clock me-3"></i>
+
+
+                            <!-- <h2 class="mt-2 mb-4"><span class="text-warning "><b>Our</b> </span><span class="text-success "><b>Vission</b> </span> </h2> -->
+                            <p class="p">Coexisting in the same landscape in a manner in which both conservation and
+                                welfare is addressed for man and wildlife.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card cardji">
+                        <h2 class="mt-2 mb-4"><span class="text-warning "><b>Our</b> </span><span
+                                class="text-success "><b>Mission</b> </span> </h2>
+
+                        <div class="d-flex">
+                            <i class="featured-icon bi-clock me-3"></i>
+
+
+                            <!-- <h2 class="mt-2 mb-4"><span class="text-warning "><b>Our</b> </span><span class="text-success "><b>Vission</b> </span> </h2> -->
+                            <p class="p">Wildlife SOS was established to make lasting changes to protect and conserve
+                                India’s natural heritage, forest and biodiversity. We actively work towards protecting
+                                wildlife, conserving habitat, studying biodiversity, conducting research, and creating
+                                alternative and sustainable livelihoods for erstwhile communities that depend on
+                                wildlife for sustenance.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-5 col-5 mx-lg-auto">
+                    <br><br>
+                    <img src="https://wildlifesos.org/wp-content/uploads/2020/03/wildlife-sos-mission.jpg"
+                        class="photo about-image-small img-fluid" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-4">
+                <h2 class="mt-2 mb-4"><span class="text-warning "><b>Loc</b></span><span
+                        class="text-success "><b>ation</b> </span> </h2>
+                <ul>
+                    <li>
+
+                        <a class="text-black" href="https://wildlifesos.org/locations/agra-bear-rescue-facility/">
+                            <p>Agra Bear Rescue Facility</p>
+                        </a>
                     </li>
-
-                    <li class="nav-item">
-                         <a class="nav-link menu" href="#section_2">About</a>
+                    <li>
+                        <a class="text-black" href="https://wildlifesos.org/locations/bannerghatta-bear-rescue-centre/">
+                            <p>Bannerghatta Bear Rescue Centre</p>
+                        </a>
                     </li>
-
-                    <li class="nav-item dropdown">
-                         <a  class="nav-link dropdown-toggle menu" href="#section_3" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Work</a>
-
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                            <li> <a class="dropdown-item" href="shop-listing.html">Our Vission</a></li>
-
-                            <li> <a  class="dropdown-item" href="vishal.html">Our Mission</a></li>
-                        </ul>
+                    <li>
+                        <a class="text-black" href="https://wildlifesos.org/locations/dachigam-rescue-centre/">
+                            <p>Dachigam Rescue Centre</p>
+                        </a>
                     </li>
-
-                    <li class="nav-item">
-                         <a  class="nav-link menu" href="#section_4">Reviews</a>
+                    <li>
+                        <a class="text-black"
+                            href="https://wildlifesos.org/locations/elephant-conservation-and-care-centre/">
+                            <p>Elephant Conservation and Care Centre</p>
+                        </a>
                     </li>
-
-                    <li class="nav-item">
-                         <a  class="nav-link menu" href="#section_5">Contact</a>
+                    <li>
+                        <a class="text-black" href="https://wildlifesos.org/locations/elephant-hospital/">
+                            <p>Treatment Unit at ECCC&nbsp;</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-black"
+                            href="https://wildlifesos.org/locations/ch-surinder-singh-elephant-rehabilitation-centre/">
+                            <p>Elephant Rehabilitation Centre</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-black"
+                            href="https://wildlifesos.org/locations/human-primate-conflict-mitigation-centre/">
+                            <p>Human Primate Conflict Mitigation Centre</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-black" href="https://wildlifesos.org/locations/manekdoh-leopard-rescue-centre/">
+                            <p>Manikdoh Leopard Rescue Centre</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-black" href="https://wildlifesos.org/locations/pahalgam-rescue-centre/">
+                            <p>Pahalgam Rescue Centre</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-black" href="https://wildlifesos.org/locations/van-vihar-bear-rescue-facility/">
+                            <p>Van Vihar Bear Rescue Facility</p>
+                        </a>
                     </li>
                 </ul>
             </div>
+            <div class="col-md-4">
+                <img src="https://wildlifesos.org/wp-content/uploads/2021/11/map-websitte.png"
+                    class="shop-image img-fluid" alt="">
+            </div>
+            <div class="col-md-2">
+
+            </div>
         </div>
-    </nav>
-   <!--nave bar end-->
-<br><br>
-   <section class="banner" id="section_1">
-    <div class="container">
-        <div class="row">
 
-            <div class="col-lg-8 col-12 text-center mx-auto">
-                <div class="hero-section-text">
-                    <br><br>
-                    <h3 class="section-small-title text-white"> Welcome to <span class="text-warning "><b>Wild</b> <span class="text-success "><b>Life</b> <i class="hero-icon bi-house"></i></small>
-<br><br>
-                    <h1 class="hero-title text-white mt-2 mb-4">
-                        OUR APPROACH TO SAVING WILDLIFE</h1>
 
-                    <form class="custom-form hero-form" action="#" method="get" role="form">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-6 col-12">
-                                <div class="input-group align-items-center">
-                                    <label for="product-name"> Animal .</label>
+    </div>
 
-                                    <input type="text" name="product-name" id="product-name" class="form-control" placeholder="Tiger, Lion..." required>
+
+    <section class="shop-section section-padding" id="section_3">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-12">
+                    <small class="section-small-title"><span class="text-warning">Our</span><span
+                            class="text-success">Mozailo</span> </small>
+
+                    <h2 class="mt-2 mb-4"><span class="tooplate-red text-warning">Qoutes</span><span
+                            class="text-success"> On Wild Life</span> </h2>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                    <div class="shop-thumb">
+                        <div class="shop-image-wrap">
+                            <a class="text-black" href="vishal.html">
+                                <img src="https://cdn.pixabay.com/photo/2023/07/24/01/32/lizard-8145964_640.jpg"
+                                    class="shop-image img-fluid" alt="">
+                            </a>
+
+                            <div class="shop-icons-wrap">
+                                <div class="shop-icons d-flex flex-column align-items-center">
+                                    <a class="text-black" href="#" class="shop-icon bi-heart"></a>
+
+                                    <a class="text-black" href="#" class="shop-icon bi-bookmark"></a>
+                                </div>
+
+                                <p class="shop-pricing mb-0 mt-3">
+                                    <span class="badge custom-badge">$3,600</span>
+                                </p>
+                            </div>
+
+                            <div class="shop-btn-wrap">
+                                <a class="text-black" href="vishal.html"><button>Learn more</button></a>
+                            </div>
+                        </div>
+
+                        <div class="shop-body">
+                            <h4>The wild holds secrets untold, a treasure trove of biodiversity</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                    <div class="shop-thumb">
+                        <div class="shop-image-wrap">
+                            <a class="text-black" href="vishal.html">
+                                <img src="https://cdn.pixabay.com/photo/2023/07/22/05/50/wolf-8142720_640.png"
+                                    class="shop-image img-fluid" alt="">
+                            </a>
+
+                            <div class="shop-icons-wrap">
+                                <div class="shop-icons d-flex flex-column align-items-center">
+                                    <a class="text-black" href="#" class="shop-icon bi-heart"></a>
+
+                                    <a class="text-black" href="#" class="shop-icon bi-bookmark"></a>
+                                </div>
+
+                                <p class="shop-pricing mb-0 mt-3">
+                                    <span class="badge custom-badge">$6,400</span>
+                                </p>
+                            </div>
+
+                            <div class="shop-btn-wrap">
+                                <a class="text-black" href="vishal.html"><button>Learn more</button></a>
+                            </div>
+                        </div>
+
+                        <div class="shop-body">
+                            <h4>In the eyes of a wild creature, a story of survival and resilience unfolds</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-12">
+                    <div class="shop-thumb">
+                        <div class="shop-image-wrap">
+                            <a class="text-black" href="vishal.html">
+                                <img src="https://cdn.pixabay.com/photo/2023/08/10/20/10/shark-8182315_640.jpg"
+                                    class="shop-image img-fluid" alt="">
+                            </a>
+
+                            <div class="shop-icons-wrap">
+                                <div class="shop-icons d-flex flex-column align-items-center">
+                                    <a class="text-black" href="#" class="shop-icon bi-heart"></a>
+
+                                    <a class="text-black" href="#" class="shop-icon bi-bookmark"></a>
+                                </div>
+
+                                <p class="shop-pricing mb-0 mt-3">
+                                    <span class="badge custom-badge">$2,400</span>
+                                </p>
+                            </div>
+
+                            <div class="shop-btn-wrap">
+                                <a class="text-black" href="vishal.html"><button>Learn more</button></a>
+                            </div>
+                        </div>
+
+                        <div class="shop-body">
+                            <h4>Wildlife teaches us lessons of harmony, adaptability, and interconnectedness.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-12">
+                    <div class="shop-thumb">
+                        <div class="shop-image-wrap">
+                            <a class="text-black" href="vishal.html">
+                                <img src="https://cdn.pixabay.com/photo/2023/05/24/06/53/bird-8014191_640.jpg"
+                                    class="shop-image img-fluid" alt="">
+                            </a>
+
+                            <div class="shop-icons-wrap">
+                                <div class="shop-icons d-flex flex-column align-items-center">
+                                    <a class="text-black" href="#" class="shop-icon bi-heart"></a>
+
+                                    <a class="text-black" href="#" class="shop-icon bi-bookmark"></a>
+                                </div>
+
+                                <p class="shop-pricing mb-0 mt-3">
+                                    <span class="badge custom-badge">$3,800</span>
+                                </p>
+                            </div>
+
+                            <div class="shop-btn-wrap">
+                                <a class="text-black" href="vishal.html"><button>Learn more</button></a>
+                            </div>
+                        </div>
+
+                        <div class="shop-body">
+                            <h4>Wildlife is a masterpiece painted by nature's own hand.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-12">
+                    <div class="shop-thumb">
+                        <div class="shop-image-wrap">
+                            <a class="text-black" href="vishal.html">
+                                <img src="https://cdn.pixabay.com/photo/2023/07/07/20/04/bighorn-sheep-8113311_640.jpg"
+                                    class="shop-image img-fluid" alt="">
+                            </a>
+
+                            <div class="shop-icons-wrap">
+                                <div class="shop-icons d-flex flex-column align-items-center">
+                                    <a class="text-black" href="#" class="shop-icon bi-heart"></a>
+
+                                    <a class="text-black" href="#" class="shop-icon bi-bookmark"></a>
+                                </div>
+
+                                <p class="shop-pricing mb-0 mt-3">
+                                    <span class="badge custom-badge">$850</span>
+                                </p>
+                            </div>
+
+                            <div class="shop-btn-wrap">
+                                <a class="text-black" href="vishal.html"><button>Learn more</button></a>
+                            </div>
+                        </div>
+
+                        <div class="shop-body">
+                            <h4>In the heart of the wild, nature's symphony plays a melody of life.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-12">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="text-black" class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+
+                            <li class="page-item active" aria-current="page">
+                                <a class="text-black" class="page-link" href="#">1</a>
+                            </li>
+
+                            <li class="page-item">
+                                <a class="text-black" class="page-link" href="#">2</a>
+                            </li>
+
+                            <li class="page-item">
+                                <a class="text-black" class="page-link" href="#">3</a>
+                            </li>
+
+                            <li class="page-item">
+                                <a class="text-black" class="page-link" href="#">4</a>
+                            </li>
+
+                            <li class="page-item">
+                                <a class="text-black" class="page-link" href="#">5</a>
+                            </li>
+
+                            <li class="page-item">
+                                <a class="text-black" class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="cmspage mtb-40 reviews-section " id="section_4">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="text-secondary text-uppercase">Our Technicians</h6>
+                    <h1 class="mb-5">Our Experts Reviews</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid" src="images/team-1.jpeg" alt="">
+                            </div>
+                            <div class="team-text">
+                                <div class="bg-light">
+                                    <h5 class="fw-bold mb-0">Laboratry </h5>
+                                    <small>Bangalore</small>
+                                </div>
+                                <div class="bg-primary">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
-
-                            <div class="col-lg-5 col-md-6 col-12">
-                                <div class="input-group align-items-center">
-                                    <label for="last-name"> Country .</label>
-
-                                    <select name="price-range" class="form-select form-control" id="price-range" aria-label="Default select example">
-                                        <option value="500" selected></option>
-                                        <option value="1000">1,000 - 2,900</option>
-                                        <option value="3000">3,000 - 5,000</option>
-                                        <option value="5000">5,000 - 10,000</option>
-                                        <option value="11000">11,000 - 25,000</option>
-                                    </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid" src="images/team-2.jpeg" alt="">
+                            </div>
+                            <div class="team-text">
+                                <div class="bg-light">
+                                    <h5 class="fw-bold mb-0">Scientists</h5>
+                                    <small>PLZ Nagpur</small>
+                                </div>
+                                <div class="bg-primary">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
-
-                            <div class="col-lg-2 col-md-6 col-12">
-                                <button type="submit" class="form-control">Search</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid" src="images/team-3.jpg" alt="">
                             </div>
+                            <div class="team-text">
+                                <div class="bg-light">
+                                    <h5 class="fw-bold mb-0">Josh Hazelwood</h5>
+                                    <small>British Review</small>
+                                </div>
+                                <div class="bg-primary">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid" src="images/team-4.jpg" alt="">
+                            </div>
+                            <div class="team-text">
+                                <div class="bg-light">
+                                    <h5 class="fw-bold mb-0">Jimmy Uso</h5>
+                                    <small>Inspector</small>
+                                </div>
+                                <div class="bg-primary">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+    <section class="contact-section" id="section_5">
+        <div class="container">
+            <h2 class="text-center"><span class="text-warning "><b>Con</b></span><span class="text-success "><b>tact</b>
+                </span></h2><br>
+            <div class="content">
+                <div class="left-side">
+                    <div class="address details">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="topic">Address</div>
+                        <div class="text-one">Hazira, Gwalior</div>
+                        <div class="text-two">Madhya Pradesh</div>
+                    </div>
+                    <div class="phone details">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="topic">Phone</div>
+                        <div class="text-one">6266339138</div>
+                        <div class="text-two">7722893287</div>
+                    </div>
+                    <div class="email details">
+                        <i class="fas fa-envelope"></i>
+                        <div class="topic">Email</div>
+                        <div class="text-one">vibhuvishal80@gmail.com</div>
+                        <div class="text-two">info.codinglab@gmail.com</div>
+
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="topic-text">Send us a message</div>
+                    <p>If you have any work from me or any types of quries related to my work, you can send me message
+                        from here. It's my pleasure to help you.</p>
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter your name">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter your email">
+                        </div>
+                        <div class="input-box message-box">
+                            <textarea placeholder="Any message"></textarea>
+                        </div>
+                        <div class="button">
+                            <input type="button" value="Send Now">
                         </div>
                     </form>
-
-                    <div class="hero-btn d-flex justify-content-center align-items-center">
-                         <a class="text-black" class="bi-arrow-down hero-btn-link smoothscroll" href="#section_2"></a>
-                    </div> 
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<br><br>
-
-<section class="about-section section-padding" id="section_2">
-    <div class="container">
-        <div class="row align-items-center">
-
-            <div class="col-lg-5 col-12">
-                <small class="section-small-title text-success"><b>HISTORY</b></small>
-
-                <h2 class="mt-2 mb-4"><span class="text-warning "><b>Our</b> </span><span class="text-success "><b>Story</b> </span> </h2>
-
-                <h4 class="text-muted mb-3">In 1986,a group of individuals determined to conserve India’s rich natural heritage</h4>
-                began operating a rescue centre out of a small garage in New Delhi. Their goal was simple – to aid wildlife in distress and expand India’s core value of the right to freedom and dignity to the realm of wild animals. Kartick Satyanarayan and Geeta Seshamani’s grit and determination gave birth to Wildlife SOS. Today, we have evolved into an organisation actively protecting India’s precious wildlife, conserving habitats, studying biodiversity, conducting research, and creating alternative and sustainable livelihoods for erstwhile poacher communities or those who depend on wildlife for sustenance. We are the largest wildlife rescue organisation in India and run 12 rescue and rehabilitation centres across the country.
-
-                <p>began operating a rescue centre out of a small garage in New Delhi. Their goal was simple – to aid wildlife in distress and expand India’s core value of the right to freedom and dignity to the realm of wild animals. Kartick Satyanarayan and Geeta Seshamani’s grit and determination gave birth to Wildlife SOS. Today, we have evolved into an organisation actively protecting India’s precious wildlife, conserving habitats, studying biodiversity, conducting research, and creating alternative and sustainable livelihoods for erstwhile poacher communities or those who depend on wildlife for sustenance. We are the largest wildlife rescue organisation in India and run 12 rescue and rehabilitation centres across the country.
-                </p>
-
-            </div>
-
-            <div class="col-lg-3 col-md-5 col-5 mx-lg-auto">
-                <img src="https://images.pexels.com/photos/17992418/pexels-photo-17992418/free-photo-of-great-basin-fence-lizard.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="about-image about-image-small img-fluid" alt="">
-            </div>
-
-            <div class="col-lg-4 col-md-7 col-7">
-                <img src="https://images.pexels.com/photos/14007613/pexels-photo-14007613.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="about-image img-fluid" alt="">
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-
-
-<br><br>
-
-
-<section class="featured-section section-padding">
-    <div class="container">
-        <div class="row">
-   
-            <div class="col-lg-5 col-12">
-                <br><br>
-                <div class="card ">
-                    <h2 class="mt-2 mb-4"><span class="text-warning "><b>Our</b> </span><span class="text-success "><b>Vission</b> </span> </h2>
-
-                    <div class="d-flex">
-                        <i class="featured-icon bi-clock me-3"></i>
-                        
-                       
-                <!-- <h2 class="mt-2 mb-4"><span class="text-warning "><b>Our</b> </span><span class="text-success "><b>Vission</b> </span> </h2> -->
-                <p class="p">Coexisting in the same landscape in a manner in which both conservation and welfare is addressed for man and wildlife.</p>
-                    </div>
-                </div>
-                <br>
-                <div class="card cardji">
-                    <h2 class="mt-2 mb-4"><span class="text-warning "><b>Our</b> </span><span class="text-success "><b>Mission</b> </span> </h2>
-
-                    <div class="d-flex">
-                        <i class="featured-icon bi-clock me-3"></i>
-                        
-                       
-                <!-- <h2 class="mt-2 mb-4"><span class="text-warning "><b>Our</b> </span><span class="text-success "><b>Vission</b> </span> </h2> -->
-                <p class="p">Wildlife SOS was established to make lasting changes to protect and conserve India’s natural heritage, forest and biodiversity. We actively work towards protecting wildlife, conserving habitat, studying biodiversity, conducting research, and creating alternative and sustainable livelihoods for erstwhile communities that depend on wildlife for sustenance.</p>
-                    </div>
-                </div>
-               
-            </div>
-            <div class="col-lg-3 col-md-5 col-5 mx-lg-auto">
-                <br><br>
-                <img src="https://wildlifesos.org/wp-content/uploads/2020/03/wildlife-sos-mission.jpg" class="photo about-image-small img-fluid" alt="">
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<br><br>
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-4">
-            <h2 class="mt-2 mb-4"><span class="text-warning "><b>Loc</b></span><span class="text-success "><b>ation</b> </span> </h2>
-             <ul>
-                <li>
-              
-                     <a class="text-black"  href="https://wildlifesos.org/locations/agra-bear-rescue-facility/"><p>Agra Bear Rescue Facility</p></a>
-                </li>
-                <li>
-                     <a class="text-black" href="https://wildlifesos.org/locations/bannerghatta-bear-rescue-centre/"><p>Bannerghatta Bear Rescue Centre</p></a>
-                </li>
-                <li>
-                     <a class="text-black" href="https://wildlifesos.org/locations/dachigam-rescue-centre/"><p>Dachigam Rescue Centre</p></a>
-                </li>
-                <li>
-                     <a class="text-black" href="https://wildlifesos.org/locations/elephant-conservation-and-care-centre/"><p>Elephant Conservation and Care Centre</p></a>
-                </li>
-                <li>
-                     <a class="text-black" href="https://wildlifesos.org/locations/elephant-hospital/"><p>Treatment Unit at ECCC&nbsp;</p></a>
-                </li>
-                <li>
-                     <a class="text-black" href="https://wildlifesos.org/locations/ch-surinder-singh-elephant-rehabilitation-centre/"><p>Elephant Rehabilitation Centre</p></a>
-                </li>
-                <li>
-                     <a class="text-black" href="https://wildlifesos.org/locations/human-primate-conflict-mitigation-centre/"><p>Human Primate Conflict Mitigation Centre</p></a>
-                </li>
-                <li>
-                     <a class="text-black" href="https://wildlifesos.org/locations/manekdoh-leopard-rescue-centre/"><p>Manikdoh Leopard Rescue Centre</p></a>
-                </li>
-                <li>
-                     <a class="text-black" href="https://wildlifesos.org/locations/pahalgam-rescue-centre/"><p>Pahalgam Rescue Centre</p></a>
-                </li>
-                <li>
-                     <a class="text-black" href="https://wildlifesos.org/locations/van-vihar-bear-rescue-facility/"><p>Van Vihar Bear Rescue Facility</p></a>
-                </li>
-             </ul>
-        </div>
-        <div class="col-md-4">
-            <img src="https://wildlifesos.org/wp-content/uploads/2021/11/map-websitte.png" class="shop-image img-fluid" alt="">
-        </div>
-        <div class="col-md-2">
-
-        </div>
-    </div>
-    
-
-</div>
-
-
-<section class="shop-section section-padding" id="section_3">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-lg-12 col-12">
-                <small class="section-small-title"><span class="text-warning">Our</span><span class="text-success">Mozailo</span> </small>
-
-                <h2 class="mt-2 mb-4"><span class="tooplate-red text-warning">Qoutes</span><span class="text-success"> On Wild Life</span> </h2>
-            </div>
-
-            <div class="col-lg-6 col-12">
-                <div class="shop-thumb">
-                    <div class="shop-image-wrap">
-                         <a class="text-black" href="vishal.html">
-                            <img src="https://cdn.pixabay.com/photo/2023/07/24/01/32/lizard-8145964_640.jpg" class="shop-image img-fluid" alt="">
-                        </a>
-
-                        <div class="shop-icons-wrap">
-                            <div class="shop-icons d-flex flex-column align-items-center">
-                                 <a class="text-black" href="#" class="shop-icon bi-heart"></a>
-
-                                 <a class="text-black" href="#" class="shop-icon bi-bookmark"></a>
-                            </div>
-
-                            <p class="shop-pricing mb-0 mt-3">
-                                <span class="badge custom-badge">$3,600</span>
-                            </p>
-                        </div>
-
-                        <div class="shop-btn-wrap">
-                             <a class="text-black" href="vishal.html" ><button>Learn more</button></a>
-                        </div>
-                    </div>
-
-                    <div class="shop-body">
-                        <h4>The wild holds secrets untold, a treasure trove of biodiversity</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-12">
-                <div class="shop-thumb">
-                    <div class="shop-image-wrap">
-                         <a class="text-black" href="vishal.html">
-                            <img src="https://cdn.pixabay.com/photo/2023/07/22/05/50/wolf-8142720_640.png" class="shop-image img-fluid" alt="">
-                        </a>
-
-                        <div class="shop-icons-wrap">
-                            <div class="shop-icons d-flex flex-column align-items-center">
-                                 <a class="text-black" href="#" class="shop-icon bi-heart"></a>
-
-                                 <a class="text-black" href="#" class="shop-icon bi-bookmark"></a>
-                            </div>
-
-                            <p class="shop-pricing mb-0 mt-3">
-                                <span class="badge custom-badge">$6,400</span>
-                            </p>
-                        </div>
-
-                        <div class="shop-btn-wrap">
-                             <a class="text-black" href="vishal.html" ><button>Learn more</button></a>
-                        </div>
-                    </div>
-
-                    <div class="shop-body">
-                        <h4>In the eyes of a wild creature, a story of survival and resilience unfolds</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-12">
-                <div class="shop-thumb">
-                    <div class="shop-image-wrap">
-                         <a class="text-black" href="vishal.html">
-                            <img src="https://cdn.pixabay.com/photo/2023/08/10/20/10/shark-8182315_640.jpg" class="shop-image img-fluid" alt="">
-                        </a>
-
-                        <div class="shop-icons-wrap">
-                            <div class="shop-icons d-flex flex-column align-items-center">
-                                 <a class="text-black" href="#" class="shop-icon bi-heart"></a>
-
-                                 <a class="text-black" href="#" class="shop-icon bi-bookmark"></a>
-                            </div>
-
-                            <p class="shop-pricing mb-0 mt-3">
-                                <span class="badge custom-badge">$2,400</span>
-                            </p>
-                        </div>
-
-                        <div class="shop-btn-wrap">
-                             <a class="text-black" href="vishal.html" ><button>Learn more</button></a>
-                        </div>
-                    </div>
-
-                    <div class="shop-body">
-                        <h4>Wildlife teaches us lessons of harmony, adaptability, and interconnectedness.</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-12">
-                <div class="shop-thumb">
-                    <div class="shop-image-wrap">
-                         <a class="text-black" href="vishal.html">
-                            <img src="https://cdn.pixabay.com/photo/2023/05/24/06/53/bird-8014191_640.jpg" class="shop-image img-fluid" alt="">
-                        </a>
-
-                        <div class="shop-icons-wrap">
-                            <div class="shop-icons d-flex flex-column align-items-center">
-                                 <a class="text-black" href="#" class="shop-icon bi-heart"></a>
-
-                                 <a class="text-black" href="#" class="shop-icon bi-bookmark"></a>
-                            </div>
-
-                            <p class="shop-pricing mb-0 mt-3">
-                                <span class="badge custom-badge">$3,800</span>
-                            </p>
-                        </div>
-
-                        <div class="shop-btn-wrap">
-                             <a class="text-black" href="vishal.html" ><button>Learn more</button></a>
-                        </div>
-                    </div>
-
-                    <div class="shop-body">
-                        <h4>Wildlife is a masterpiece painted by nature's own hand.</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-12">
-                <div class="shop-thumb">
-                    <div class="shop-image-wrap">
-                         <a class="text-black" href="vishal.html">
-                            <img src="https://cdn.pixabay.com/photo/2023/07/07/20/04/bighorn-sheep-8113311_640.jpg" class="shop-image img-fluid" alt="">
-                        </a>
-
-                        <div class="shop-icons-wrap">
-                            <div class="shop-icons d-flex flex-column align-items-center">
-                                 <a class="text-black" href="#" class="shop-icon bi-heart"></a>
-
-                                 <a class="text-black" href="#" class="shop-icon bi-bookmark"></a>
-                            </div>
-
-                            <p class="shop-pricing mb-0 mt-3">
-                                <span class="badge custom-badge">$850</span>
-                            </p>
-                        </div>
-
-                        <div class="shop-btn-wrap">
-                             <a class="text-black" href="vishal.html" ><button>Learn more</button></a>
-                        </div>
-                    </div>
-
-                    <div class="shop-body">
-                        <h4>In the heart of the wild, nature's symphony plays a melody of life.</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-12 col-12">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item">
-                             <a class="text-black" class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-
-                        <li class="page-item active" aria-current="page">
-                             <a class="text-black" class="page-link" href="#">1</a>
-                        </li>
-                        
-                        <li class="page-item">
-                             <a class="text-black" class="page-link" href="#">2</a>
-                        </li>
-                        
-                        <li class="page-item">
-                             <a class="text-black" class="page-link" href="#">3</a>
-                        </li>
-
-                        <li class="page-item">
-                             <a class="text-black" class="page-link" href="#">4</a>
-                        </li>
-
-                        <li class="page-item">
-                             <a class="text-black" class="page-link" href="#">5</a>
-                        </li>
-                        
-                        <li class="page-item">
-                             <a class="text-black" class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-
-
-
-<section class="cmspage mtb-40 reviews-section "id="section_4">
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-secondary text-uppercase">Our Technicians</h6>
-                <h1 class="mb-5">Our Experts Reviews</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="images/team-1.jpeg" alt="">
-                        </div>
-                        <div class="team-text">
-                            <div class="bg-light">
-                                <h5 class="fw-bold mb-0">Laboratry </h5>
-                                <small>Bangalore</small>
-                            </div>
-                            <div class="bg-primary">
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="images/team-2.jpeg" alt="">
-                        </div>
-                        <div class="team-text">
-                            <div class="bg-light">
-                                <h5 class="fw-bold mb-0">Scientists</h5>
-                                <small>PLZ Nagpur</small>
-                            </div>
-                            <div class="bg-primary">
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="images/team-3.jpg" alt="">
-                        </div>
-                        <div class="team-text">
-                            <div class="bg-light">
-                                <h5 class="fw-bold mb-0">Josh Hazelwood</h5>
-                                <small>British Review</small>
-                            </div>
-                            <div class="bg-primary">
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="images/team-4.jpg" alt="">
-                        </div>
-                        <div class="team-text">
-                            <div class="bg-light">
-                                <h5 class="fw-bold mb-0">Jimmy Uso</h5>
-                                <small>Inspector</small>
-                            </div>
-                            <div class="bg-primary">
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<br><br>
-
-<section class="contact-section" id="section_5">
-<div class="container">
-    <h2 class="text-center"><span class="text-warning "><b>Con</b></span><span class="text-success "><b>tact</b> </span></h2><br>
-    <div class="content">
-      <div class="left-side">
-        <div class="address details">
-          <i class="fas fa-map-marker-alt"></i>
-          <div class="topic">Address</div>
-          <div class="text-one">Hazira, Gwalior</div>
-          <div class="text-two">Madhya Pradesh</div>
-        </div>
-        <div class="phone details">
-          <i class="fas fa-phone-alt"></i>
-          <div class="topic">Phone</div>
-          <div class="text-one">6266339138</div>
-          <div class="text-two">7722893287</div>
-        </div>
-        <div class="email details">
-          <i class="fas fa-envelope"></i>
-          <div class="topic">Email</div>
-          <div class="text-one">vibhuvishal80@gmail.com</div>
-          <div class="text-two">info.codinglab@gmail.com</div>
-
-        </div>
-      </div>
-      <div class="right-side">
-        <div class="topic-text">Send us a message</div>
-        <p>If you have any work from me or any types of quries related to my work, you can send me message from here. It's my pleasure to help you.</p>
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Enter your name">
-        </div>
-        <div class="input-box">
-          <input type="text" placeholder="Enter your email">
-        </div>
-        <div class="input-box message-box">
-          <textarea placeholder="Any message"></textarea>
-        </div>
-        <div class="button">
-          <input type="button" value="Send Now" >
-        </div>
-      </form>
-    </div>
-    </div>
-  </div>
 
 
-</section>
+    </section>
 
-<br><br>
-<section class="footer-section">
-    <div class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
-                        </ul>
+    <br><br>
+    <section class="footer-section">
+        <div class="footer-dark">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="#">Web design</a></li>
+                                <li><a href="#">Development</a></li>
+                                <li><a href="#">Hosting</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 item text">
+                            <h3>Vishal Bhagat</h3>
+                            <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut
+                                vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit
+                                pulvinar dictum vel in justo.</p>
+                        </div>
+                        <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a
+                                href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i
+                                    class="icon ion-social-snapchat"></i></a><a href="#"><i
+                                    class="icon ion-social-instagram"></i></a></div>
                     </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h3>Vishal Bhagat</h3>
-                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
-                    </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                    <p class="copyright">Vishal Bhagat © Company</p>
                 </div>
-                <p class="copyright">Vishal Bhagat © Company</p>
-            </div>
-        </footer>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-</section>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    </section>
 </body>
 
 </html>

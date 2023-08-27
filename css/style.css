@@ -19,6 +19,10 @@
 background-color: #ffd74f;
  color: rgb(253, 248, 248);
 }
+.m-0 img{
+height: 50px;
+width :50px;
+}
 
 .banner{
  background-image: url(https://cdn.pixabay.com/photo/2023/06/11/12/03/lynx-8055805_640.jpg);
@@ -80,7 +84,11 @@ li {
 button{
     text-align: center;
     color: #fec711;
+    
     border-radius: 80px 500px;
+}
+button:hover{
+  background-color: green;
 }
 
 
